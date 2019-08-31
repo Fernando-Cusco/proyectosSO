@@ -13,7 +13,7 @@ from django.db.models import Q
 from django.core.paginator import Paginator
 
 
-service = NaturalLanguageUnderstandingV1(version='2019-07-12',url='https://gateway.watsonplatform.net/natural-language-understanding/api', iam_apikey='JM1l-nZPsCwBdSfOLzP1b8lr4RREN6XDo_CiJ4a8HcNh')
+service = NaturalLanguageUnderstandingV1(version='2019-07-12',url='https://gateway.watsonplatform.net/natural-language-understanding/api', iam_apikey='PON TU API KEY')
 
 # Create your views here.
 def home(request):
