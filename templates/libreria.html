@@ -1,0 +1,95 @@
+{% extends 'index.html' %}
+{% load staticfiles %}
+{% block titulo %}
+Blog|Libreria
+{% endblock %}
+
+{% block imagen %}
+{% static 'img/libreria.jpg' %}
+{% endblock %}
+
+{% block titulo_principal %}
+Sistema Recomendacion
+{% endblock %}
+
+
+{% block subtitulo %}
+Filtro basado en contenido.
+{% endblock %}
+{% block nodata %}{% endblock %}
+{% block datos %}
+
+{% endblock %}
+
+{% block ph %}Busca tu libro{% endblock%}
+
+{% block vacio %}
+
+
+
+{% if lib %}
+  <div class="row">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src= "{{ lib.2 }}" alt="Card image cap">
+      <div class="card-body">
+        <b>Titulo Libro: </b>
+        <p>{{ lib.0 }}</p>
+        <b>Descripcion Libro: </b>
+        <p class="card-text">{{ lib.1 }}</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src= "{{ lib.5 }}" alt="Card image cap">
+      <div class="card-body">
+        <b>Titulo Libro: </b>
+        <p>{{ lib.3 }}</p>
+        <b>Descripcion Libro: </b>
+        <p class="card-text">{{ lib.4 }}</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src= "{{ lib.8 }}" alt="Card image cap">
+      <div class="card-body">
+        <b>Titulo Libro: </b>
+        <p>{{ lib.6 }}</p>
+        <b>Descripcion Libro: </b>
+        <p class="card-text">{{ lib.7 }}</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src= "{{ lib.11 }}" alt="Card image cap">
+      <div class="card-body">
+        <b>Titulo Libro: </b>
+        <p>{{ lib.9 }}</p>
+        <b>Descripcion Libro: </b>
+        <p class="card-text">{{ lib.10 }}</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src= "{{ lib.14 }}" alt="Card image cap">
+      <div class="card-body">
+        <b>Titulo Libro: </b>
+        <p>{{ lib.12 }}</p>
+        <b>Descripcion Libro: </b>
+        <p class="card-text">{{ lib.13 }}</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src= "{{ lib.17 }}" alt="Card image cap">
+      <div class="card-body">
+        <b>Titulo Libro: </b>
+        <p>{{ lib.15 }}</p>
+        <b>Descripcion Libro: </b>
+        <p class="card-text">{{ lib.16 }}</p>
+      </div>
+    </div>
+  </div>
+
+{% endif %}
+
+{% endblock %}
